@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <script defer src="./lunar.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <main>
+        <header>
+            <h1>Lunar Phase Calculator</h1>
+            <p>Enter a date and find out the corresponding moon phase!</p>
+        </head>
+        <form id="date-form">
+            <div class="inputs">
+                <input id="year" min="0" type="number" placeholder="YYYY"> 
+                <input id="month" type="number" max="12" min="01" placeholder="MM">
+                <input id="day" type="number" min="01" max="31" placeholder="DD">
+            </div>
+              <button id="submit-btn" type="submit">🌙 calculate moon phase 🌙</button>
+              <p id="result"></p>
+            </form>
+
+            <div class="notes">
+                <h2>some notes</h2>
+                <p>If the date is left empty it defaults to the current date.</p>
+                <p>Entering '0' as year will default to '2000', and entering something like '78' will default to '1978'.</p>
+                <p>To get the year '78' enter '0078'.</p>
+                <p>Either '02' and '2' will work for day and month.</p>
+                <p>Now does it work, yes, but i wouldn't bet my left hand on its accuracy...</p>
+            </div>      
+    </main> 
+
+    <footer>
+        <p>made by <a href="">tortaruga</a> with lots of insanity ✨</p>
+    </footer>
+</body>
+</html>
