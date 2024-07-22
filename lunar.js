@@ -17,7 +17,6 @@ dateForm.addEventListener('submit', (e) => {
   if (!myDate) {
     myDate = new Date();
   }
-  console.log(myDate)
   getPhase(myDate)
 })
 

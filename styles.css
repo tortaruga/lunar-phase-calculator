@@ -71,7 +71,7 @@ button {
     font-size: larger;
     font-family: montserrat;
     border-radius: .4rem;
-    padding: .4rem;   
+    padding: .7rem;   
     transition: .3s;
 }
 
@@ -89,6 +89,10 @@ h2 {
     font-size: 1.1rem;
     color: rgb(204, 206, 192);
     text-decoration: underline;
+}
+
+.notes {
+    margin-block: 4rem;
 }
 
 .notes p {
