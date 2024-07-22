@@ -95,6 +95,10 @@ h2 {
   font-size: .9rem;;
 }
 
+p {
+    max-width: 40rem;
+}
+
 footer {
     margin-top: 5rem; 
     font-size: .7rem;
