@@ -13,10 +13,14 @@ dateForm.addEventListener('submit', (e) => {
   const monthValue = validateFormat(month.value);
   const dayValue = validateFormat(day.value); 
 
+if (yearValue && monthValue && dayValue) {
   myDate = new Date(`${yearValue}-${monthValue}-${dayValue}`);
-  if (!myDate) {
-    myDate = new Date();
-  }
+} else {
+  myDate = new Date();
+
+}
+
+  console.log(myDate)
   getPhase(myDate)
 })
 
