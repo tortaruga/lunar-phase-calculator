@@ -22,6 +22,7 @@ It's a very simple moon phase calculator, that doesn't take into consideration a
 It's not the most accurate thing as a result, especially on the cusp points, but anyway what do you need this silly thing for? if you need it accurate go ask NASA!
 
 (The design sucks, but nobody is surprised about that.)
+update: the design doesn't suck anymore!!! I mean, it probably does, but it's the first thing designed by me that i could almost call pretty! 💜💜 I'm over the moon! ...bad pun? 
 
 # how it works
 

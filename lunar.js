@@ -3,6 +3,8 @@ const month = document.getElementById('month');
 const day = document.getElementById('day');
 const result = document.getElementById('result');
 const dateForm = document.getElementById('date-form');
+const phaseImg = document.querySelector('.phase-img');
+const resultDisplay = document.querySelector('.result-display');
 
 let myDate;
 
@@ -19,8 +21,6 @@ if (yearValue && monthValue && dayValue) {
   myDate = new Date();
 
 }
-
-  console.log(myDate)
   getPhase(myDate)
 })
 
@@ -62,38 +62,44 @@ function getPhase(date) {
     phase = 'Waning Crescent';
   }
 
-  result.innerHTML = phase + ' ' + phaseEmoji(phase);
+  showResult();
+  result.innerHTML = phase;
+  phaseImg.src = phaseImage(phase);
 }
 
 
-function phaseEmoji(phase) {
-  let moonEmoji;
+function phaseImage(phase) {
+  let resultImg;
 
    switch (phase) {
     case 'New Moon':
-          moonEmoji = '🌑';
+          resultImg = './images/new.png';
           break;
     case 'Waxing Crescent':
-          moonEmoji = '🌒';
+          resultImg = './images/waxing-crescent.png';
           break;
     case 'First Quarter':
-          moonEmoji = '🌓';
+          resultImg = './images/first-quarter.png';
           break;
     case 'Waxing Gibbous':
-          moonEmoji = '🌔';
+          resultImg = './images/waxing-gibbous.png';
           break;
     case 'Full Moon':
-          moonEmoji = '🌕';
+          resultImg = './images/full.png';
           break;
     case 'Waning Gibbous':
-          moonEmoji = '🌖';
+          resultImg = './images/waning-gibbous.png';
           break;
     case 'Last Quarter':
-          moonEmoji = '🌗';
+          resultImg = './images/last-quarter.png';
           break;
     case 'Waning Crescent':
-          moonEmoji = '🌘';
+          resultImg = './images/waning-crescent.png';
           break;
    }
-   return moonEmoji;
+   return resultImg;
+}
+
+function showResult() {
+  resultDisplay.style.display = 'inline-block';
 }

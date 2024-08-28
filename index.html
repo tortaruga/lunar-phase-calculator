@@ -3,39 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
+    <title>Moon phase calculator</title> 
     <script defer src="./lunar.js"></script>
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-    <main>
         <header>
-            <h1>Lunar Phase Calculator</h1>
-            <p>Enter a date and find out the corresponding moon phase!</p>
-        </head>
+            <h1 class="main-heading">Lunar Phase Calculator</h1>
+        </header>
+        <main>
         <form action="#" method="get" id="date-form">
             <div class="inputs">
-                <input id="year" min="0" type="number" placeholder="YYYY"> 
+                <div class="group">
+                <input id="day" min="0" max="31" type="number" placeholder="DD"> 
                 <input id="month" type="number" max="12" min="01" placeholder="MM">
-                <input id="day" type="number" min="01" max="31" placeholder="DD">
+                </div>
+                <input id="year" type="number" min="0" placeholder="YYYY">
             </div>
               <button id="submit-btn" type="submit">🌙 calculate moon phase 🌙</button>
-              <p id="result"></p>
             </form>
+             
+           <section class="result-display">
+            <img src="" alt="moon phase icon" class="phase-img">
+            <p id="result"></p>
+           </section>
 
-            <div class="notes">
-                <h2>some notes</h2>
-                <p>If the date is left empty it defaults to the current date.</p>
-                <p>Entering '0' as year will default to '2000', and entering something like '78' will default to '1978'.</p>
-                <p>To get the year '78' enter '0078'.</p>
-                <p>Either '02' and '2' will work for day and month.</p>
-                <p>Now does it work, yes, but i wouldn't bet my left hand on its accuracy...</p>
-            </div>      
-    </main> 
+            <section class="notes">
+                <h1 class="notes__heading">instructions</h2>
+                <p>Enter a date and find out the moon phase!</p>
+                <ul>
+                    <li>If the date is left empty it defaults to the current date</li>
+                    <li>For single digit months and days you can either enter the single digit or precede it by a 0 (ex.: 02 and 2 are both valid formats for february)</li>
+                    <li>Entering 0 as year will default to 2000</li>
+                    <li>Entering less than four digits as year will default to the 1900s (78 will be treated as 1978)</li>
+                    <li>To get the year 78 enter 0078</li>
+                    <li>Enjoy!</li>
+                </ul>
+            </section>      
+    </main>
 
     <footer>
-        <p>made by <a href="https://github.com/tortaruga" target="_blank">tortaruga</a> with lots of insanity ✨</p>
+        <p class="credit"> all icons by <a href="https://www.freepik.com/icon/moon-star_15727190#fromView=resource_detail&position=33" target="_blank">Kason Koo</a> 💜
+        </p>
+        <p class="attribution">made by <a href="https://github.com/tortaruga" target="_blank">tortaruga</a> with lots of insanity ✨</p>
     </footer>
 </body>
 </html>
