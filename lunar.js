@@ -44,21 +44,21 @@ function getPhase(date) {
   const daysSinceNewMoon = (moonAge + fullCycleDuration) % fullCycleDuration;
 
   let phase;
-  if (daysSinceNewMoon < 1.845) {
+  if (daysSinceNewMoon < 1.84566173161) {
     phase = 'New Moon';
-  } else if (daysSinceNewMoon < 5.536) {
+  } else if (daysSinceNewMoon < 5.53698519483) {
     phase = 'Waxing Crescent';
-  } else if (daysSinceNewMoon < 9.228) {
+  } else if (daysSinceNewMoon < 9.22830865805) {
     phase = 'First Quarter';
-  } else if (daysSinceNewMoon < 12.92) {
+  } else if (daysSinceNewMoon < 12.91963212127) {
     phase = 'Waxing Gibbous';
-  } else if (daysSinceNewMoon < 16.61) {
+  } else if (daysSinceNewMoon < 16.61095558449) {
     phase = 'Full Moon';
-  } else if (daysSinceNewMoon < 20.302) {
+  } else if (daysSinceNewMoon < 20.30227904771) {
     phase = 'Waning Gibbous';
-  } else if (daysSinceNewMoon < 23.994) {
+  } else if (daysSinceNewMoon <= 23.99360251093) {
     phase = 'Last Quarter';
-  } else {
+  } else if (daysSinceNewMoon < 27.68492597415) {
     phase = 'Waning Crescent';
   }
 
